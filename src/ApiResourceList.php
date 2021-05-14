@@ -174,12 +174,12 @@ class ApiResourceList extends \ArrayObject
         }
     }
 
-    public function asort()
+    public function asort($flags = SORT_REGULAR)
     {
         asort($this->items);
     }
 
-    public function ksort()
+    public function ksort($flags = SORT_REGULAR)
     {
         ksort($this->items);
     }
